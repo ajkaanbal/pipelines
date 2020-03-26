@@ -5,7 +5,7 @@ metadata:
 data:
   config: |
     {
-    executorImage: gcr.io/ml-pipeline/argoexec:v2.3.0-license-compliance,
+    executorImage: argoproj/argoexec:v2.7.0-rc3,
     artifactRepository:
     {
         s3: {

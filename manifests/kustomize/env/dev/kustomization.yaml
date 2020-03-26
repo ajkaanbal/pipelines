@@ -13,7 +13,7 @@ commonLabels:
   application-crd-id: kubeflow-pipelines
 
 # Replace with your namespace
-namespace: kubeflow
+namespace: arkon-ops
 
 images:
   - name: mysql

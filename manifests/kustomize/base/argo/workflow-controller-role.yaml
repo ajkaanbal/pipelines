@@ -36,6 +36,10 @@ rules:
   resources:
   - workflows
   - workflows/finalizers
+  - workflowtemplates
+  - workflowtemplates/finalizers
+  - cronworkflows
+  - cronworkflows/finalizers
   verbs:
   - get
   - list

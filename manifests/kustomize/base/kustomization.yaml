@@ -5,7 +5,7 @@ bases:
 - application
 - argo
 - pipeline
-- proxy
+# - proxy
 - metadata
 
 resources:
