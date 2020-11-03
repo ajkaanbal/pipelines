@@ -251,7 +251,7 @@ class Compiler(object):
         if param.value:
           continue
         if param.op_name:
-          aaram.op_name = sanitize_k8s_name(param.op_name)
+          param.op_name = sanitize_k8s_name(param.op_name)
           upstream_op = pipeline.ops[param.op_name]
           upstream_groups, downstream_groups = \
             self._get_uncommon_ancestors(op_groups, opsgroup_groups, upstream_op, op)
