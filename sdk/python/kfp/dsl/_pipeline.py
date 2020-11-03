@@ -135,6 +135,9 @@ class PipelineConf():
     """
     self.op_transformers.append(transformer)
 
+  def set_annotations(self, annotations):
+    self.annotations = annotations
+
 
 def get_pipeline_conf():
   """Configure the pipeline level setting to the current pipeline

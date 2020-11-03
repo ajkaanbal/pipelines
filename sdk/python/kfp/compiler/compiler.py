@@ -678,6 +678,12 @@ class Compiler(object):
     if pipeline_conf.parallelism:
       workflow['spec']['parallelism'] = pipeline_conf.parallelism
 
+
+    if pipeline_conf.annotations:
+        metadata = workflow.setdefault('metadata', {})
+        annotations = metadata.setdefault('annotations', {})
+        workflow['metadata']['annotations'] = {**annotations, **pipeline_conf.annotations}
+
     # set ttl after workflow finishes
     if pipeline_conf.ttl_seconds_after_finished >= 0:
       workflow['spec']['ttlSecondsAfterFinished'] = pipeline_conf.ttl_seconds_after_finished
