@@ -64,6 +64,7 @@ class PipelineConf():
     self.default_pod_node_selector = {}
     self.image_pull_policy = None
     self.parallelism = None
+    self.annotations = {}
 
   def set_image_pull_secrets(self, image_pull_secrets):
     """Configures the pipeline level imagepullsecret
